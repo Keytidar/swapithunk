@@ -62,7 +62,7 @@ const inputItems = [
         <button
           className="border border-danger text-danger"
           onClick={async () => {
-            if (data.length > 0) {
+            if (data) {
               try {
                 await navigator.clipboard.writeText(data);
                 alert('copied successfully');
